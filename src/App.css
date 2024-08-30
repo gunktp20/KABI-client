@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  padding: 1rem 0 1rem 0;
+  color:#7a7a7a;
+}
+
+table tr:nth-child(even){background-color: #f5f5f5;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  /* background-color: #1966fb; */
+  color: #515151;
+  font-size: 11px;
+}
+
+.loader {
+  border: 2px solid #e1e1e1;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar:horizontal {
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#adadad] rounded-xl;
+  }
+  
+  .task > ::-webkit-scrollbar-thumb {
+    @apply bg-[#adadad] rounded-xl;
+  }
+  
+  .shadow-xsm{
+    box-shadow: rgb(207, 207, 207) 0px 0.3px 1px;
+  }
+  
+  @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
